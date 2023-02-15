@@ -1,0 +1,185 @@
+/* --------------------------multi text animation-------------------------- */
+
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700,800,900&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    font-family: sans-serif;
+}
+
+ /* body{
+ 	margin:0;
+ 	font-family: 'Poppins', sans-serif;
+ 	font-weight: 400;
+ }
+
+ *{
+ 	box-sizing: border-box;
+ } */
+
+ .container{
+ 	max-width: 1170px;
+ 	width: 100%;
+ 	margin:auto;
+ }
+
+ .home{
+ 	height: 100vh;
+ 	
+ 	background-size: cover;
+ 	background-position: center;
+ 	display: flex;
+ 	flex-wrap: wrap;
+ 	padding:50px 15px;
+ 	position: relative;
+ }
+
+
+
+.home-text span {
+    margin-top: -100px;
+    margin-left: 60px;
+}
+
+
+
+/* .home .home-text p{
+	margin-top: 400px;
+	margin-left: 180px;
+	overflow: hidden;
+	position: absolute;
+	top: 50px;
+	left: 50px;
+	transform: translate(-50%,-50%);
+} */
+.home .home-text p span{
+
+    font-size: 80px;
+    /* color:  rgba(255, 255, 255, 0.1) ; */
+    font-weight: 900;
+    display: inline-block;
+    line-height: 60px;
+    display: none;
+}
+
+.home .home-text p span.text-in{
+	display: block;
+	animation: textIn .9s ease;
+}
+.home .home-text p span.text-out{
+	animation: textOut .5s ease;
+}
+@keyframes textIn{
+	0%{
+		transform: translateY(100%);
+	}
+	100%{
+		transform: translateY(0%);
+	}
+}
+@keyframes textOut{
+	0%{
+		transform: translateY(0%);
+	}
+	100%{
+		transform: translateY(-100%);
+
+	}
+}
+
+
+#ripple {
+   
+}
+
+
+
+
+.animate-text
+{
+    /* height: 100vh; */
+    background: url(kyle-johnson-8Gl7Ew-q6D8-unsplash.jpg);
+    /* background-size: cover;
+    background-repeat: no-repeat; */
+}
+
+span
+{
+    position: absolute;
+    top: 50%;
+    left: 2%;
+    transform: translateY(-50%, -50%);
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    font-size: 4em;
+    font-weight: bold;
+    color: #ffffff96;
+  filter: drop-shadow(0 0 15px rgba(255, 255, 255, 0.9)) ;
+
+    /* text-shadow: 0px 5px 10px rgb(0, 0, 0,.1); */
+    mix-blend-mode: overlay;
+    /* box-shadow: 0 5px 10px rgba(0,0,0,1);
+    background: rgba(0,0,0,.5); */
+}
+
+
+
+
+/* ---------------------------cloud animation------------------------------ */
+
+
+
+
+
+/* .container-1{
+    background-image: url('./images/forestBG.jpg');
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 100vh;
+    position: relative;
+} */
+
+.cloud{
+    overflow: hidden;
+}
+.cloud img{
+    animation: cld calc(8s * var(--i)) linear infinite;
+    opacity: .6;
+    max-width: 100%;
+    position: absolute;
+    bottom: 200px;
+}
+@keyframes cld{
+    0%{
+        transform: translateX(-100%);
+    }
+    100%{
+        transform: translateX(100%);
+    }
+}
+
+
+/* .next {
+    height: 70px;
+    width: 150px;
+    color: #ffffff;
+    background: rgb(161, 7, 7);
+    position: absolute;
+    top: 87%;
+    left: 85%;
+    transform: translateY(-50%, -50%);
+    text-align: center;
+    font-size: 60px;
+    text-decoration: none;
+    border-radius: 7px;
+} */
+
+
+
+/* ------------------------------button ripple effect--------------------------- */
+
+
+
